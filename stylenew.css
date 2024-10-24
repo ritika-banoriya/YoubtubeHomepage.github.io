@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 16px;
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2020;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Left - Logo and Menu */
+.box1 {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    height: 24px;
+    width: 24px;
+    background-image: url(menu-icon.png); /* Ensure correct image path */
+    background-size: cover;
+    border: none;
+    margin-right: 12px;
+}
+
+.logo {
+    height: 20px;
+    width: 90px;
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+/* Navbar Center - Search */
+.box2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    width: 477px;
+    height: 40px;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-icon {
+    width: 50px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+.mic {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Navbar Right - Sign in and More */
+.box3 {
+    display: flex;
+    align-items: center;
+}
+
+.box3 i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.signin {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.signin i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.signin p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(6, 95, 212);
+}
+
+/* Sidebar Styling */
+.sidebar-container {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 65px;
+    height: calc(100vh - 56px);
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Sidebar Links */
+.link-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    padding: 12px 0;
+    transition: background-color 0.3s;
+}
+
+.custom-link:hover {
+    background-color: #e1e1e1;
+    border-radius: 12px;
+}
+
+.custom-link .fa-icon {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.custom-link .text {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 65px;
+    padding: 20px;
+    margin-top: 56px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    overflow: auto;
+}
